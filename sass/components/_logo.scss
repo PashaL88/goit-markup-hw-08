@@ -1,12 +1,16 @@
 .logo {
   color: var(--acent-color);
   font-family: var(--logo-font);
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
+  font-size: 26px;
 
   &:hover,
   &:focus {
     color: var(--acent-color);
+  }
+
+  @include mq(desktop) {
+    font-size: 31px;
   }
 }

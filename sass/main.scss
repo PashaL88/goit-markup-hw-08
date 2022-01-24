@@ -1,9 +1,11 @@
 // Переменные
 @import "./utils/variables";
+@import "./utils/mixins";
 //Общие стили
 @import "./components/base";
 @import "./components/buttons";
 @import "./components/logo";
+@import "./components/container";
 // Модал
 @import "./components/modal";
 // Каркас
@@ -15,4 +17,3 @@
 @import "./components/clients";
 @import "./components/footer";
 @import "./components/portfolio";
-@import "./mobile/index";

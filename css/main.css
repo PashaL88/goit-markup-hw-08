@@ -73,12 +73,6 @@ img {
   max-width: 100%;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: fixed;
   -webkit-transform: scale(0);
@@ -163,13 +157,37 @@ img {
 .logo {
   color: var(--acent-color);
   font-family: var(--logo-font);
-  font-weight: bold;
-  font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
+  font-size: 26px;
 }
 
 .logo:hover, .logo:focus {
   color: var(--acent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 31px;
+  }
+}
+
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .modal {
@@ -423,7 +441,13 @@ img {
   display: flex;
 }
 
-.nav .nav__list {
+@media screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,8 +497,29 @@ img {
   margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts {
+    display: block;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-link {
@@ -570,7 +615,7 @@ img {
 .features__list-title {
   margin-bottom: 10px;
   color: var(--primary-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -578,7 +623,7 @@ img {
 
 .features__description {
   margin-bottom: 0;
-  line-height: 2;
+  line-height: 1.71;
   font-size: 14px;
   color: var(--secondary-text-color);
 }

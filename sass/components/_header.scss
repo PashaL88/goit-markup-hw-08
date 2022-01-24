@@ -13,10 +13,16 @@
 
 .nav {
   display: flex;
-  .nav__list {
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  &__list {
     display: flex;
     margin-left: 93px;
   }
+
   &__item {
     margin-right: 50px;
     &:last-child {
@@ -60,9 +66,24 @@
   display: flex;
   margin-left: auto;
 
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(tablet-only) {
+    display: block;
+    margin-left: 84px;
+  }
+
   &__item {
     &:not(:last-child) {
-      margin-right: 50px;
+      @include mq(tablet-only) {
+        margin-bottom: 10px;
+      }
+
+      @include mq(desktop) {
+        margin-right: 50px;
+      }
     }
   }
 
