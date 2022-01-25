@@ -12,9 +12,21 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+
+    @include mq(mobile-only) {
+      display: block;
+      width: 100%;
+    }
+
+    @include mq(tablet-only) {
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
   }
   &__icon {
     display: block;
+    text-align: center;
     padding: 25px 102px;
     margin-bottom: 30px;
     background-color: var(--additional-bg-color);
@@ -28,6 +40,26 @@
     width: 270px;
     margin-right: 30px;
     margin-bottom: 0;
+
+    @include mq(mobile-only) {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+
+      &:nth-child(4n) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include mq(tablet-only) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -47,5 +79,9 @@
     line-height: 1.71;
     font-size: 14px;
     color: var(--secondary-text-color);
+
+    @include mq(mobile-only) {
+      text-align: left;
+    }
   }
 }

@@ -1,26 +1,81 @@
 .hero {
-  padding: 200px 0;
   background-color: var(--secondary-bg-color);
   text-align: center;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      var(--gradient-color),
-      var(--gradient-color)
-    ),
-    url("../images/jpeg/Imgbg-1.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
+  @include mq(mobile-only) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("../images/hero/bg-mob1x.jpg");
+  }
+  @include mq(retina) {
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("../images/hero/bg-mob2x.jpg");
+  }
+
+  @include mq(tablet-only) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("/images/hero/bg-tab1x.jpg");
+  }
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("../images/hero/bg-tab2x.jpg");
+  }
+
+  @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("../images/hero/bg-dest1x.jpg");
+  }
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        var(--gradient-color),
+        var(--gradient-color)
+      ),
+      url("../images/hero/bg-dest1x.jpg");
+  }
 
   &-title {
     margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include mq(desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }

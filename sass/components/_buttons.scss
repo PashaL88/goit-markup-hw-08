@@ -50,3 +50,31 @@
     margin-right: 0;
   }
 }
+
+.mobile-menu {
+  display: none;
+
+  @include mq(mobile-only) {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    width: 40px;
+    padding: 0;
+
+    background-color: transparent;
+    margin-left: auto;
+    border: none;
+    z-index: 100;
+  }
+
+  &:hover .mobile-menu-icon {
+    fill: var(--btn-acent-color);
+    cursor: pointer;
+  }
+  &-close {
+    display: none;
+  }
+}
