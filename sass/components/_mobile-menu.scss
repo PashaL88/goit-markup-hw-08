@@ -1,15 +1,25 @@
 .mobile-modal {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
 
-  display: none;
+  opacity: 0;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   padding: 48px 40px;
   background-color: var(--white-bg-color);
+  transform: translateX(100%);
+  transition: transform var(--transition-property),
+    opacity var(--transition-property);
+}
+.mobile-modal.is-open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .mobile-item {

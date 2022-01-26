@@ -80,7 +80,7 @@
             ></use>
           </svg>
         </button>
-        <div class="mobile-modal" data-menu id="mobile-modal">
+        <div class="mobile-modal modal-open" data-menu id="mobile-modal">
           <ul class="mobile-list">
             <li class="mobile-item">
               <a href="" class="mobile-link mobile-link-active">Студия</a>
@@ -137,7 +137,7 @@
           </button>
         </div>
         <!-- Modal -->
-        <!-- <div class="modal is-hidden" data-modal>
+        <div class="modal is-hidden" data-modal>
           <form class="modal-container">
             <button
               class="modal-button-close"
@@ -219,7 +219,7 @@
             </label>
             <button class="modal-button" type="submit">Отправить</button>
           </form>
-        </div> -->
+        </div>
       </section>
       <section class="section features">
         <div class="container">
@@ -278,61 +278,105 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section images">
+      <section class="section images">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="images-list">
             <li class="images-list-item">
-              <img
-                src="./images/jpeg/img.jpg"
-                alt="Печать на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/whatwedo/print.jpg   1x,
+                    ./images/whatwedo/print2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/jpeg/img.jpg"
+                  alt="Печать на клавиатуре"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="images-list-description">Десктопные приложения</p>
             </li>
             <li class="images-list-item">
-              <img
-                src="./images/jpeg/img(1).jpg"
-                alt="Айфон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/whatwedo/iphone.jpg   1x,
+                    ./images/whatwedo/iphone2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./images/jpeg/img(1).jpg"
+                  alt="Айфон"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="images-list-description">Мобильные приложения</p>
             </li>
             <li class="images-list-item">
-              <img
-                src="./images/jpeg/img(2).jpg"
-                alt="Айпад"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/whatwedo/ipad.jpg   1x,
+                    ./images/whatwedo/ipad2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/jpeg/img(2).jpg"
+                  alt="Айпад"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="images-list-description">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <picture>
-                <source src="./images/Team/member1-sm.jpg" 1x />
-                <source src="./images/Team/member1-sm2x.jpg 2x" />
-              </picture>
-              <picture>
-                <source src="./images/Team/member1-md.jpg 1x" />
-                <source src="./images/Team/member1-md.jpg" 2x />
-              </picture>
-              <picture>
-                <source src="./images/Team/member1-lg.jpg" 1x />
-                <source src="./images/Team/member1-lg2x.jpg" 2x />
-
+                <source
+                  srcset="
+                    ./images/team/member1-lg.jpg   1x,
+                    ./images/team/member1-lg2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member1-md.jpg   1x,
+                    ./images/team/member1-md2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member1-sm.jpg   1x,
+                    ./images/team/member1-sm2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
                 <img
-                  src="./images/jpeg/img(3).jpg"
+                  src="./images/team/member1-sm.jpg"
                   alt="Фото мужчины"
-                  width="270"
+                  width="450"
                 />
               </picture>
               <div class="team-item">
@@ -380,22 +424,35 @@
             </li>
             <li class="team-list-item">
               <picture>
-                <source src="./images/Team/member2-sm.jpg" 1x />
-                <source src="./images/Team/member2-sm2x.jpg 2x" />
-              </picture>
-              <picture>
-                <source src="./images/Team/member2-md.jpg 1x" />
-                <source src="./images/Team/member2-md.jpg" 2x />
-              </picture>
-              <picture>
-                <source src="./images/Team/member2-lg.jpg" 1x />
-                <source src="./images/Team/member2-lg2x.jpg" 2x />
+                <source
+                  srcset="
+                    ./images/team/member2-lg.jpg   1x,
+                    ./images/team/member2-lg2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member2-md.jpg   1x,
+                    ./images/team/member2-md2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member2-sm.jpg   1x,
+                    ./images/team/member2-sm2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
 
                 <img
                   src="./images/jpeg/img(4).jpg"
                   alt="Фото женщины"
-                  width="270"
-                  height="260"
+                  width="450"
                 />
               </picture>
               <div class="team-item">
@@ -463,16 +520,30 @@
             </li>
             <li class="team-list-item">
               <picture>
-                <source src="./images/Team/member3-sm.jpg" 1x />
-                <source src="./images/Team/member3-sm2x.jpg 2x" />
-              </picture>
-              <picture>
-                <source src="./images/Team/member3-md.jpg 1x" />
-                <source src="./images/Team/member3-md.jpg" 2x />
-              </picture>
-              <picture>
-                <source src="./images/Team/member3-lg.jpg" 1x />
-                <source src="./images/Team/member3-lg2x.jpg" 2x />
+                <source
+                  srcset="
+                    ./images/team/member3-lg.jpg   1x,
+                    ./images/team/member3-lg2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member3-md.jpg   1x,
+                    ./images/team/member3-md2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member3-sm.jpg   1x,
+                    ./images/team/member3-sm2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
 
                 <img
                   src="./images/jpeg/img(5).jpg"
@@ -541,16 +612,30 @@
             </li>
             <li class="team-list-item">
               <picture>
-                <source src="./images/Team/member4-sm.jpg" 1x />
-                <source src="./images/Team/member4-sm2x.jpg 2x" />
-              </picture>
-              <picture>
-                <source src="./images/Team/member4-md.jpg 1x" />
-                <source src="./images/Team/member4-md.jpg" 2x />
-              </picture>
-              <picture>
-                <source src="./images/Team/member4-lg.jpg" 1x />
-                <source src="./images/Team/member4-lg2x.jpg" 2x />
+                <source
+                  srcset="
+                    ./images/team/member4-lg.jpg   1x,
+                    ./images/team/member4-lg2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member4-md.jpg   1x,
+                    ./images/team/member4-md2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/member4-sm.jpg   1x,
+                    ./images/team/member4-sm2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
                 <img
                   src="./images/jpeg/img(6).jpg"
                   alt="Фото мужчины"
@@ -653,72 +738,92 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-adress">
-          <a lang="en" href="./index.html" class="logo logo-footer"
-            >Web<span class="logo-footer-item">Studio</span></a
-          >
-          <address>
-            <ul>
-              <li class="footer-list">
-                <a href="" class="footer-contacts animation">
-                  <span class="footer-contacts-item"
-                    >г. Киев, пр-т Леси Украинки, 26</span
+        <div class="footer-tablet">
+          <div class="footer-adress">
+            <a lang="en" href="./index.html" class="logo logo-footer"
+              >Web<span class="logo-footer-item">Studio</span></a
+            >
+            <address>
+              <ul>
+                <li class="footer-list">
+                  <a href="" class="footer-contacts animation">
+                    <span class="footer-contacts-item"
+                      >г. Киев, пр-т Леси Украинки, 26</span
+                    >
+                  </a>
+                </li>
+                <li class="footer-list">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-contacts animation"
+                    >info@example.com</a
                   >
+                </li>
+                <li class="footer-listr">
+                  <a href="tel:+380991111111" class="footer-contacts animation"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="accession">
+            <p class="accession-description">присоединяйтесь</p>
+            <ul class="accession-list">
+              <li class="accession-list-item">
+                <a
+                  class="accession-link animation"
+                  href=""
+                  aria-label="Instagram"
+                >
+                  <svg class="accession-list-icon">
+                    <use
+                      href="images/svg/symbol-defs.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-list">
+              <li class="accession-list-item">
                 <a
-                  href="mailto:info@example.com"
-                  class="footer-contacts animation"
-                  >info@example.com</a
+                  class="accession-link animation"
+                  href=""
+                  aria-label="Twitter"
                 >
+                  <svg class="accession-list-icon">
+                    <use href="images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-listr">
-                <a href="tel:+380991111111" class="footer-contacts animation"
-                  >+38 099 111 11 11</a
+              <li class="accession-list-item">
+                <a
+                  class="accession-link animation"
+                  href=""
+                  aria-label="Facebook"
                 >
+                  <svg class="accession-list-icon">
+                    <use
+                      href="images/svg/symbol-defs.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="accession-list-item">
+                <a
+                  class="accession-link animation"
+                  href=""
+                  aria-label="LinkedIn"
+                >
+                  <svg class="accession-list-icon">
+                    <use
+                      href="images/svg/symbol-defs.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="accession">
-          <p class="accession-description">присоединяйтесь</p>
-          <ul class="accession-list">
-            <li class="accession-list-item">
-              <a
-                class="accession-link animation"
-                href=""
-                aria-label="Instagram"
-              >
-                <svg class="accession-list-icon">
-                  <use href="images/svg/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="accession-list-item">
-              <a class="accession-link animation" href="" aria-label="Twitter">
-                <svg class="accession-list-icon">
-                  <use href="images/svg/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="accession-list-item">
-              <a class="accession-link animation" href="" aria-label="Facebook">
-                <svg class="accession-list-icon">
-                  <use href="images/svg/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="accession-list-item">
-              <a class="accession-link animation" href="" aria-label="LinkedIn">
-                <svg class="accession-list-icon">
-                  <use href="images/svg/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-forms">
           <p class="footer-forms-description">Подпишитесь на рассылку</p>
@@ -738,7 +843,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
