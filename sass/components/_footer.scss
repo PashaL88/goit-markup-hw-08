@@ -30,7 +30,7 @@
 
   @include mq(tablet-only) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin-left: 76px;
     text-align: center;
   }
