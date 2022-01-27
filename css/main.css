@@ -735,7 +735,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts {
     display: block;
-    margin-left: 84px;
   }
 }
 
