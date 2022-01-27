@@ -1,9 +1,11 @@
 .header {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
+  @include mq(mobile-only) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   &__content {
     display: flex;
     align-items: center;
@@ -22,6 +24,11 @@
 
   &__list {
     display: flex;
+
+    @include mq(tablet-only) {
+      margin-left: 88px;
+    }
+
     margin-left: 93px;
   }
 
