@@ -31,7 +31,7 @@
   @include mq(tablet-only) {
     display: flex;
     align-items: baseline;
-    margin-left: 76px;
+    justify-content: center;
     text-align: center;
   }
 
@@ -126,7 +126,6 @@
 
 .footer-forms {
   margin-left: 93px;
-  margin-bottom: 60px;
   @include mq(mobile-only) {
     margin-right: auto;
     margin-left: auto;

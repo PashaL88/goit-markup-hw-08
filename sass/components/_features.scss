@@ -1,5 +1,8 @@
 .features {
   padding-bottom: 0;
+  @include mq(notDesktop) {
+    margin-bottom: 60px;
+  }
 
   &__title {
     margin-bottom: 50px;

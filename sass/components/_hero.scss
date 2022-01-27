@@ -16,14 +16,14 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/bg-mob1x.jpg");
+      url("/images/hero/bg-dest_sm1x.jpg");
   }
   @include mq(retina) {
     background-image: linear-gradient(
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/bg-mob2x.jpg");
+      url("/images/hero/bg-dest_sm2x.jpg");
   }
 
   @include mq(tablet-only) {
@@ -33,7 +33,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("/images/hero/bg-tab1x.jpg");
+      url("/images/hero/bg-dest_md1x.jpg");
   }
 
   @include mq(retina) {
@@ -41,7 +41,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/bg-tab2x.jpg");
+      url("/images/hero/bg-dest_md2x.jpg");
   }
 
   @include mq(desktop) {
@@ -52,7 +52,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/bg-dest1x.jpg");
+      url("/images/hero/bg-dest_lg1x.jpg");
   }
 
   @include mq(retina) {
@@ -60,7 +60,7 @@
         var(--gradient-color),
         var(--gradient-color)
       ),
-      url("../images/hero/bg-dest1x.jpg");
+      url("/images/hero/bg-dest_lg2x.jpg");
   }
 
   &-title {
